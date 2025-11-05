@@ -15,11 +15,12 @@ export default {
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, './index.html'),
-        form: resolve(__dirname, './form.html'),
-        logs: resolve(__dirname, './logs.html')
+        main: resolve(__dirname, 'https://dronefrontend.vercel.app/index.html'),
+        form: resolve(__dirname, 'https://dronefrontend.vercel.app/form.html'),
+        logs: resolve(__dirname, 'https://dronefrontend.vercel.app/form.html')
       }
     }
   }
 }
+
 
