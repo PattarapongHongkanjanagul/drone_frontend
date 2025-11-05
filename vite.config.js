@@ -1,19 +1,20 @@
 // vite.config.js
-import { defineConfig } from 'vite';
-
-export default defineConfig({
-    // ใส่ค่าเพิ่มได้ภายหลัง; ค่านี้พอสำหรับเริ่ม dev server แล้ว
-    server: {
-        port: 5173,   // ปรับได้
-        open: true,   // เปิดเบราว์เซอร์อัตโนมัติ
-    },
-});
-
+import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
-export default {
+export default defineConfig({
+  // dev server เวลา run `npm run dev`
+  server: {
+    port: 5173,
+    open: true,
+  },
+
+  // ค่า build สำหรับ Vercel
+  base: '/',          // เสิร์ฟจากรากโดเมน
   build: {
+    outDir: 'dist',   // ให้ชัดเจน
     rollupOptions: {
+      // บอก Vite ว่ามีหลายหน้า HTML
       input: {
         main: resolve(__dirname, 'index.html'),
         form: resolve(__dirname, 'form.html'),
@@ -21,4 +22,4 @@ export default {
       },
     },
   },
-}
+})
