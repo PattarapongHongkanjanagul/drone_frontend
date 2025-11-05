@@ -12,10 +12,11 @@ export default defineConfig({
     outDir: 'dist',
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        form: resolve(__dirname, 'form.html'),
-        logs: resolve(__dirname, 'logs.html'),
+        main: resolve(__dirname, './index.html'),
+        form: resolve(__dirname, './form.html'),
+        logs: resolve(__dirname, './logs.html'),
       },
     },
   },
 })
+
