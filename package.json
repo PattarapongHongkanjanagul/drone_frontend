@@ -11,4 +11,7 @@
   "devDependencies": {
     "vite": "^7.1.7"
   }
+  
+  "engines": { "node": ">=20.19" }
+
 }
