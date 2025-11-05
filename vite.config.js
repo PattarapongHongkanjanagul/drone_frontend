@@ -8,3 +8,17 @@ export default defineConfig({
         open: true,   // เปิดเบราว์เซอร์อัตโนมัติ
     },
 });
+
+import { resolve } from 'path'
+
+export default {
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        form: resolve(__dirname, 'form.html'),
+        logs: resolve(__dirname, 'logs.html')
+      }
+    }
+  }
+}
