@@ -1,5 +1,5 @@
 // ============ ENV ============
-import { API_BASE, jpost, getCfg, attachRipples, toast, fmtLocal } from './main.js';
+
 export const API_BASE = import.meta.env.VITE_API_BASE;
 export const DRONE_ID = import.meta.env.VITE_DRONE_ID;
 
